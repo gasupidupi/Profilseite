@@ -20,13 +20,22 @@ nav {
   opacity: 0;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   color: #ffffff;
-  width: 90%;
+  width: 80%;
   text-align: left;
   transition:all 0.3s ease;
 }
+
 #notice:hover {
   opacity: 1;
 }
+
+@media only screen and (max-width: 600px) {
+#notice {
+  width: auto;
+  opacity: 1;
+}
+}
+
 
 #logo {
   height: 100%;
@@ -78,7 +87,6 @@ nav {
   width: 60%;
   margin: 0 auto;
   color: #32327F;
-  padding-left: 10px;
 }
 .blur {
   filter: blur(2px);
@@ -91,7 +99,10 @@ nav {
   font-size: 50px;
 }
 
-
+.content ul, .content ol {
+  padding-left: 1%;
+  margin-left: 1%;
+}
 
 #up {
   transition:all 0.3s ease;
@@ -115,4 +126,19 @@ nav {
 
 .code {
   font-style: italic;
+}
+
+.imgViewer {
+  width: 100%;
+  height: auto;
+  border: 3px solid;
+  padding: 5px;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 5px 5px #B0B0FF;
+  margin: 1% 0 1% 0;
+}
+
+.content a {
+  
 }
