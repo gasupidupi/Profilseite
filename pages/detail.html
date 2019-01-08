@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Profilseite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/main.css" rel="stylesheet"/>
+    <script src="../js/main.js"></script>
+  </head>
+  <body>
+
+    <nav>
+      <a href="index.html"><img src="../img/logo-white.svg" id="logo"></a>
+      <div id="notice"><- TO INDEX</div>
+      <div onClick="navReinRaus()" class="nav--hamburger">&#9776;</div>
+      <div class="nav--menu" id="menu">
+        <a onclick="navReinRaus()" id="menu1" href="#1">Block 1</a>
+        <a onclick="navReinRaus()" id="menu2" href="#2">Block 2</a>
+        <a onclick="navReinRaus()" id="menu3" href="#3">Block 3</a>
+        <a onclick="navReinRaus()" id="menu4" href="#4">Block 4</a>
+      </div>
+    </nav>
+
+    <div class="content" id="content">
+      <div id="1">
+        <h1>Block 1</h1>
+        An jenem Tage erhielten wir zuerst einen Einblick in das kommende Modul. Hierbei erfuhr ich nachfolgendes.<br>
+        Es gibt eine Gruppenarbeit und eine Eigenarbeit bis zum Modulende zu absolvieren.
+        <ul>
+          <li>Die Gruppenarbeit handelt darum, ein Video über ein beliebiges Thema bezüglich Webprogram-mierung zu drehen.</li>
+          <li>In der Eigenarbeit liegt die Aufgabe darin, eine Profilseite zu erstellen, die sozusagen den Inhalt eines Moduljournals besitzt und gewissen Kriterien entspricht.</li>
+        </ul>
+      </div>
+      <div id="2">
+        <h1>Block 2</h1>
+        In diesem Block erhielt ich nachfolgende Theorie.<br>
+      <ul>
+      <li>  Ein «flatdesign» ist ein minimalistisches Design.<br></li>
+        <li>Ein «onepager» ist eine Webseite ohne mehreren Seiten. Der gesamte Inhalt ist auf einer Seite ersichtlich.</li>
+        <li>Form follows function bedeutet, dass die Form durch die Funktion definiert wird.</li>
+        <li>Mobile first, lautet ein Sprichwort. Es besagt, dass man zuerst an der mobilen Version arbei-ten sollte, damit man nicht reduzieren sondern ergänzen kann, da man dann den Platz ideal gespart hat.</li>
+        <li>Es gibt vier Schritte, um eine Webseite responsive zu machen.</li>
+        <ol>
+        <li>Den Meta-tag gilt es einzubauen. Dieser lautet folgendermassen.</li>
+        <div class="code">meta name ="viewport" content="width=device-width, inital-scale=1"</div></li>
+        <li>Danach sollte man die Navigation anpassen. Man darf auch keine Tabelle verwenden, da Blindenprogramme dies nicht korrekt interpretiert.</li>
+        <li>Anschliessend sollte man den stylesheet anpassen und «@media {}» implementieren.</li>
+        <li>Schlussendlich gilt es noch die Bilder und Videos responsive zu machen. Beispielsweise mit diesem CSS-Code.<br>
+          <div class="code"> bild {max-width: 100%; height:auto;}
+        </li>
+      </ol>
+    </ul>
+      </div>
+      <div id="3">
+        <h1>Block 3</h1>
+        <div style="height: 500px"></div>
+      </div>
+      <div id="4">
+        <h1>Block 4</h1>
+        <div style="height: 500px"></div>
+      </div>
+
+
+    </div>
+    <button onclick="topFunction()" id="up" title="Go to top">Top</button>
+  </body>
+</html>
