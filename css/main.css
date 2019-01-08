@@ -87,6 +87,7 @@ nav {
   width: 60%;
   margin: 0 auto;
   color: #32327F;
+  line-height: 25px;
 }
 .blur {
   filter: blur(2px);
@@ -140,5 +141,17 @@ nav {
 }
 
 .content a {
-  
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 3px solid #6464FF;
+  transition: all 0.3s ease;
+  color: #6464FF;
+  cursor: pointer;
+
+}
+
+.content a:hover {
+  text-decoration: none;
+  color: #0000FF;
+  border-bottom: 3px solid #0000FF;
 }
