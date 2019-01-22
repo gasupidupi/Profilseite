@@ -1,40 +1,101 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Profilseite</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/main.css" rel="stylesheet"/>
-    <script src="../js/main.js"></script>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Profilseite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../css/main.css" rel="stylesheet"/>
+  <script src="../js/jquery-1.7.2.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/lightbox.js"></script>
+  <link href="../css/lightbox.css" rel="stylesheet" />
+  <script src="../responsiveslides.min.js"></script>
+</head>
+<body>
 
-    <nav>
-      <a href="index.html"><img src="../img/logo-white.svg" id="logo"></a>
-      <div id="notice"><- TO INDEX</div>
-      <div onClick="navReinRaus()" class="nav--hamburger">&#9776;</div>
-      <div class="nav--menu" id="menu">
-        <a onclick="navReinRaus()" id="menu1" href="#1">Übung 3</a>
-        <a onclick="navReinRaus()" id="menu2" href="#2">Gruppenarbeit</a>
-      </div>
-    </nav>
+  <nav>
+    <a href="index.html"><img src="../img/logo-white.svg" id="logo"></a>
+    <div id="notice"><- TO INDEX</div>
+    <div onClick="navReinRaus()" class="nav--hamburger">&#9776;</div>
+    <div class="nav--menu" id="menu">
+      <a onclick="navReinRaus()" id="menu1" href="#1">Wildlife Responsive</a>
+      <a onclick="navReinRaus()" id="menu2" href="#2">Übung 3</a>
+      <a onclick="navReinRaus()" id="menu3" href="#3">Gruppenarbeit</a>
+    </div>
+  </nav>
 
-    <div class="content" id="content">
-      <div id="1">
-        <h1>Übung 3</h1>
-          In dieser Übung handelt es sich darum, nach einer Grafikvorlage für die TopoMedics eine Webseite zu erstellen.
+  <div class="content" id="content">
+    <div id="1">
+      <h1>Wildlife Responsive</h1>
+      In dieser Übung handelt es sich darum, eine Webseite Responsive zu machen. Die Lösung sieht nachfoglendermassen aus:
+
+      <a href="../img/wildlife.png/" rel="lightbox" title="Wildlife Responsive"><img src="../img/wildlife.png/" class="imgViewer"></a>
+
+    </div>
+    <div id="2">
+      <h1>Übung 3</h1>
+      In dieser Übung handelt es sich darum, nach einer Grafikvorlage für die TopoMedics eine Webseite zu erstellen.
+
+      <a href="../img/vorlage.png/" rel="lightbox" title="Wildlife Responsive"><img src="../img/vorlage.png/" class="imgViewer"></a>
 
 
-            <img src="../img/vorlage.png/" class="imgViewer">
-
-      </div>
-      <div id="2">
-        <h1>Gruppenarbeit</h1>
-        <div style="height: 500px"></div>
+    </div>
+    <div id="3">
+      <h1>Gruppenarbeit</h1>
+      <div style="height: 500px"></div>
 
 
 
     </div>
-    <button onclick="topFunction()" id="up" title="Go to top">Top</button>
-  </body>
-</html>
+    <div id="4">
+      <h1>Audio und Video einbinden</h1>
+      <h2>Audio</h2>
+      <br>flac<br>
+      <audio controls>
+        <source src="../audio/Kalimba_01.flac" type="audio/flac">
+        </audio>
+        <br>wav<br>
+        <audio controls>
+          <source src="../audio/Kalimba_short.wav" type="audio/wav">
+          </audio>
+          <br>mp3<br>
+          <audio controls>
+            <source src="../audio/Kalimba.mp3" type="audio/mp3">
+            </audio>
+            <br>ogg<br>
+            <audio controls>
+              <source src="../audio/Kalimba.ogg" type="audio/ogg">
+              </audio>
+              <br>opus<br>
+              <audio src="../audio/Kalimba.opus" type="audio/opus" controls>
+              </audio>
+              <h2>Videos</h2>
+              <br>mp4<br>
+              <video controls>
+                <source src="../video/movie.mp4">
+                </video>
+                <br>ogv<br>
+                <video controls>
+                  <source src="../video/movie.ogv">
+                  </video>
+                  <br>webm<br>
+                  <video controls>
+                    <source src="../video/movie.webm">
+                    </video>
+
+                    <script>
+                    $(function() {
+                      $(".rslides").responsiveSlides();
+                    });
+                  </script>
+                  <h2>responsiveslides</h2>
+                  <ul class="rslides">
+                    <li><img src="../img/1.jpg" alt=""></li>
+                    <li><img src="../img/2.jpg" alt=""></li>
+                    <li><img src="../img/3.jpg" alt=""></li>
+                  </ul>
+
+                </div>
+                <button onclick="topFunction()" id="up" title="Go to top">Top</button>
+              </body>
+              </html>
