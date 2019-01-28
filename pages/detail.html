@@ -1,96 +1,355 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Profilseite</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="../pages/lib/jquery-3.3.1.js"></script>
-    <link href="../css/main.css" rel="stylesheet"/>
-    <script src="../js/main.js"></script>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Profilseite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="../pages/lib/jquery-3.3.1.js"></script>
+  <link href="../css/main.css" rel="stylesheet"/>
+  <script src="../js/main.js"></script>
+</head>
+<body>
 
-    <nav>
-      <a href="index.html"><img src="../img/logo-white.svg" id="logo"></a>
-      <div id="notice"><- TO INDEX</div>
-      <div onClick="navReinRaus()" class="nav--hamburger">&#9776;</div>
-      <div class="nav--menu" id="menu">
-        <a onclick="navReinRaus()" id="menu1" href="#1">Block 1</a>
-        <a onclick="navReinRaus()" id="menu2" href="#2">Block 2</a>
-        <a onclick="navReinRaus()" id="menu3" href="#3">Block 3</a>
-        <a onclick="navReinRaus()" id="menu4" href="#4">Block 4</a>
-      </div>
-    </nav>
+  <nav>
+    <a href="index.html"><img src="../img/logo-white.svg" id="logo"></a>
+    <div id="notice"><- TO INDEX</div>
+    <div onClick="navReinRaus()" class="nav--hamburger">&#9776;</div>
+    <div class="nav--menu" id="menu">
+      <a onclick="navReinRaus()" id="menuIndex" href="index.html">Index</a>
+      <a onclick="navReinRaus()" id="menu1" href="#1">Block 1</a>
+      <a onclick="navReinRaus()" id="menu2" href="#2">Block 2</a>
+      <a onclick="navReinRaus()" id="menu3" href="#3">Block 3</a>
+      <a onclick="navReinRaus()" id="menu4" href="#4">Block 4</a>
+      <a onclick="navReinRaus()" id="menu5" href="#5">Block 5</a>
+      <a onclick="navReinRaus()" id="menu6" href="#6">Block 6</a>
+      <a onclick="navReinRaus()" id="menu7" href="#7">Block 7</a>
+      <a onclick="navReinRaus()" id="menu8" href="#8">Block 8</a>
+      <a onclick="navReinRaus()" id="menu9" href="#9">Block 9</a>
+      <a onclick="navReinRaus()" id="menu10" href="#10">Block 10</a>
 
-    <div class="content" id="content">
-      <div id="1">
-        <h1>Block 1</h1>
-        An jenem Tage erhielten wir zuerst einen Einblick in das kommende Modul. Hierbei erfuhr ich nachfolgendes.<br>
-        Es gibt eine Gruppenarbeit und eine Eigenarbeit bis zum Modulende zu absolvieren.
-        <ul>
-          <li>Die Gruppenarbeit handelt darum, ein Video über ein beliebiges Thema bezüglich Webprogram-mierung zu drehen.</li>
-          <li>In der Eigenarbeit liegt die Aufgabe darin, eine Profilseite zu erstellen, die sozusagen den Inhalt eines Moduljournals besitzt und gewissen Kriterien entspricht.</li>
-        </ul>
-      </div>
-      <div id="2">
-        <h1>Block 2</h1>
-        In diesem Block beasste ich mich zuerst mit der <a href="uebungen.html#1">Responsive Übung</a>. Anschliessend erhielt ich nachfolgende Theorie.<br>
+
+    </div>
+  </nav>
+
+  <div class="content" id="content">
+    <div id="1" class="block">
+      <h1>Block 1</h1>
+      An jenem Tage erhielten wir zuerst einen Einblick in das kommende Modul. Hierbei erfuhr ich nachfolgendes.<br>
+      Es gibt eine Gruppenarbeit und eine Eigenarbeit bis zum Modulende zu absolvieren.
       <ul>
-      <li>  Ein «flatdesign» ist ein minimalistisches Design.<br></li>
+        <li>Die <a href="../pages/uebungen.html#3">Gruppenarbeit</a> handelt darum, ein Video über ein beliebiges Thema bezüglich Webprogram-mierung zu drehen.</li>
+        <li>In der Eigenarbeit liegt die Aufgabe darin, eine Profilseite zu erstellen, die sozusagen den Inhalt eines Moduljournals besitzt und gewissen Kriterien entspricht.</li>
+      </ul>
+    </div>
+    <div id="2" class="block">
+      <h1>Block 2</h1>
+      In diesem Block beasste ich mich zuerst mit der <a href="uebungen.html#1">Responsive Übung</a>. Anschliessend erhielt ich nachfolgende Theorie.<br>
+      <ul>
+        <li>Ein «flatdesign» ist ein minimalistisches Design.<br></li>
         <li>Ein «onepager» ist eine Webseite ohne mehreren Seiten. Der gesamte Inhalt ist auf einer Seite ersichtlich.</li>
         <li>Form follows function bedeutet, dass die Form durch die Funktion definiert wird.</li>
-        <li>Mobile first, lautet ein Sprichwort. Es besagt, dass man zuerst an der mobilen Version arbei-ten sollte, damit man nicht reduzieren sondern ergänzen kann, da man dann den Platz ideal gespart hat.</li>
+        <li>Mobile first, lautet ein Sprichwort. Es besagt, dass man zuerst an der mobilen Version arbei-ten sollte, damit man nicht reduzieren, sondern ergänzen kann, da man dann den Platz ideal gespart hat.</li>
         <li>Es gibt vier Schritte, um eine Webseite responsive zu machen.</li>
-        <ol>
+      </ul>
+
+      <br>
+      RGB kann Werte zwischen 0 und 255 pro Farbe beinhalten. Dies resultiert zu 16.8 Möglichkeiten.<br>
+      Hexadezimale Werte sehen folgendermassen aus: #FFFFFF<br>
+      Es können Werte zwischen 0-9 und A-F eingegeben werden.<br>
+      Folgende Bildformate sind für das Web sinnvoll.<br>
+      <h3>JPG</h3>
+      <ul>
+        <li>besitzt 16.7 Mio Farben bzw. 24 Bit.</li>
+        <li>verliert Qualität bei Komprimierung.</li>
+        <li>besitzt keine Transparenz.</li>
+        <li>ermöglicht Farbverläufe.</li>
+      </ul>
+      <h3>GIF</h3>
+      <ul>
+        <li>ermöglicht keine Farbverläufe.</li>
+        <li>ermöglicht Animationen.</li>
+        <li>besitzt Transparenz.</li>
+        <li>besitzt 256 Farben bzw. 8 Bit.</li>
+      </ul>
+      <h3>PNG</h3>
+      <ul>
+        <li>besitzt Transparenz.</li>
+        <li>ist möglich in 8 Bit oder 24 Bit.</li>
+        <li>ermöglicht verlustfreie Komprimierung.</li>
+      </ul>
+      <h3>SVG</h3>
+      <ul>
+        <li>ermöglicht verlustfreie Komprimierung.</li>
+        <li>beinhaltet Transparenz.</li>
+        <li>ermöglicht Animation.</li>
+        <li>ermöglicht verlustfreies Zoomen.</li>
+        <li>kann als Code eingefügt werden.</li>
+      </ul>
+      <h3>Es gibt folgende Standardauflösungen</h3>
+      <ul>
+        <li>Smartphones: 320px bis 480px</li>
+        <li>Tablets: 768px bis 1024px</li>
+        <li>Computer-Desktop: 1024px+</li>
+      </ul>
+      <h3>Webseite responsive machen</h3>
+      <ol>
         <li>Den Meta-tag gilt es einzubauen. Dieser lautet folgendermassen.</li>
-        <div class="code">meta name ="viewport" content="width=device-width, inital-scale=1"</div></li>
+        <div class="code">&#60;meta name ="viewport" content="width=device-width, inital-scale=1"></div></li>
         <li>Danach sollte man die Navigation anpassen. Man darf auch keine Tabelle verwenden, da Blindenprogramme dies nicht korrekt interpretiert.</li>
         <li>Anschliessend sollte man den stylesheet anpassen und «@media {}» implementieren.</li>
         <li>Schlussendlich gilt es noch die Bilder und Videos responsive zu machen. Beispielsweise mit diesem CSS-Code.<br>
           <div class="code"> bild {max-width: 100%; height:auto;}
-        </li>
-      </ol>
-    </ul>
+          </li>
+        </ol>
       </div>
-      <div id="3">
+      <div id="3" class="block">
         <h1>Block 3</h1>
         In diesem Block beschäftigte ich mich mit der <a href="uebungen.html#2">Aufgabe 3</a> und meiner Profilseite.<br>
+        Bei der Erstellung der Profilseite erlernte ich, wie man Klassen der Elemente bearbeitet:<br>
+        <div class="code">
+          document.getElementById("menu1").classList.toggle("display");<br>
+        </div>
         Bezüglich der <a href="uebungen.html#2">Aufgabe 3</a> erlernte ich einiges neues über HTML und CSS.<br>
-        Beispielsweise ist es ermöglicht in CSS mit "column-count: 5; -moz-column-count: 5; column-width: 50px;" den Text zu gliedern.<br>
+        Beispielsweise ist es ermöglicht in CSS den Text zu gliedern:<br>
+        <div class="code">
+          column-count: 5;<br>
+          -moz-column-count: 5;<br>
+          column-width: 50px;<br>
+        </div>
+        Ich erlernte auch diese Befehle, welche man beim Rotieren des Logos von Topomedics braucht.<br>
+        <div class="code">
+          filter: grayscale(100%);<br>
+          -webkit-filter: grayscale(100%);<br>
+          transform: rotate(-180deg);<br>
+          -webkit-transform:rotate(-180deg);<br>
+        </div>
+        <br>
 
       </div>
-      <div id="4">
+      <div id="4" class="block">
         <h1>Block 4</h1>
 
         In diesem Block behandelten wir Schriften, Icons und Logos.<br>
-<h2>Fonts</h2>
-Anhand der CSS-Regel @font-face ist es ermöglicht Fonts einzubinden. Fonts selbst befinden sich meist auf dem Server, auf welchem die Webseite gehostet ist und können potentiell heruntergeladen werden.
-<br>Woff ist ein modernes Schrift-Format. Für IE8 muss nocht EOT angeboten werden. ??
-<br>Eine Webseite auf dem verschiedenen Font angeboten werden ist <a href="https://www.fontsquirrel.com/">www.fontsquirrel.com</a>.
+        <h2>Fonts</h2>
+        Anhand der CSS-Regel @font-face ist es ermöglicht Fonts einzubinden. Fonts selbst befinden sich meist auf dem Server, auf welchem die Webseite gehostet ist und können potentiell heruntergeladen werden.
+        <br>Woff ist ein modernes Schrift-Format.
+        <br>Eine Webseite auf dem verschiedenen Font angeboten werden ist <a href="https://www.fontsquirrel.com/">www.fontsquirrel.com</a>.
 
         <br>Es gibt folgende Schriftformate:
         <ul>
-        <li>TrueType Fonts (TTF)</li>
-        Dies ist ein üppiges Format für Windows und Mac.
-        <li>The Web Open Font Format (WOFF)</li>
-        Dies wird oft auf Webseiten verwendet.
-        <li>The Web Open Font Format (WOFF 2.0)</li>
-        Dies bietet besser Kompression verglichen zu WOFF 1.0.
-        <li>Embedded OpenType Fonts (EOT)</li>
-        Dies biete eine kompakte Form der OpenType Fonts.
+          <li>TrueType Fonts (TTF)</li>
+          Dies ist ein üppiges Format für Windows und Mac.
+          <li>The Web Open Font Format (WOFF)</li>
+          Dies wird oft auf Webseiten verwendet.
+          <li>The Web Open Font Format (WOFF 2.0)</li>
+          Dies bietet besser Kompression verglichen zu WOFF 1.0.
+          <li>Embedded OpenType Fonts (EOT)</li>
+          Dies biete eine kompakte Form der OpenType Fonts.
         </ul>
+        Nachfolgend ist ein Beispiel, wie man Fonts einfügt:<br>
+        <div class="code">
+          @font-face {<br>
+            font-family: "opensansregular";<br>
+            src: url('..fonts/OpenSans-Regular.ttf') format('ttf');<br>
+            font-weight: normal;<br>
+            font-style: normal;<br>
+          }<br>
+
+          html {<br>
+            font-family: "opensansregular", sans-serif;<br>
+            scroll-behavior: smooth;<br>
+          }<br>
+        </div>
+
+
         <h2>Icons</h2>
 
         Diese kann man beispielsweise auf <a href="https://www.icomoon.io/">www.icomoon.io</a> herunterladen. Anschliessend muss man «style.css» under Ordner Fonts in das eigene Projekt einbinden mit @font face. Ins Html di-rekt kann man diese mit den Klassennamen. Das CSS lässt sich auch notfalls manipulieren.
 
         <h2>Vektorgrafiken/Raster</h2>
 
-        Mit Gimp kann man Raster erstellen, während für Vektoren Inkscape, Illustrator und Gravit Designer sinnvoll sind. Das Dateiformat GIF unterstützt zudem Animationen.
+        Mit Gimp kann man Raster erstellen, während für Vektoren Inkscape, Illustrator und Gravit Designer sinnvoll sind. Das Dateiformat GIF unterstützt zudem Animationen.<br>
+
 
       </div>
+      <div id="5" class="block">
+        <h1>Block 5</h1>
+        In diesem Block behandelten wir nachfolgende Theorie.<br>
+        Favicons sind kleine Bilder, die beispielsweise auf einem Tab ersichtlich sind. Je-doch sind dafür mehr als ein 16x16 Format nötig. Eine Lösung bietet hierbei <a href="https://www.realfavicongenerator.net/">https://www.realfavicongenerator.net/</a>.<br>
+
+        Um auf mehreren Bildern dieselbe Manipulation vorzunehmen bietet sich auf Gimp ein Ad-don namens David’sBatch Processor.<br>
+
+      </div>
+      <div id="6" class="block">
+        <h1>Block 6</h1>
+        An diesem Tage besprach der Dozent zuerst mit der Klasse die Aufgabe, in der es sich darum handelt, eine Bildgalerie und einen Slider zu implementieren. Eine Option bietet die «Light-box2» auf <a href="http://www.worldatnight.ethz.ch/lightbox/index.html">http://www.worldatnight.ethz.ch/lightbox/index.html</a> für die Galerie. Ein Slider hingegen lässt sich auf <a href="https://www.responsiveslides.com/">https://www.responsiveslides.com/</a> herunterladen.<br>
+        <h2>Lightbox</h2>
+        Den Code den mein in den HTML lautet folgendermassen:<br>
+        <h3>JS und CSS einbinden</h3>
+        <div class="code">
+          &#60;script src="js/jquery-1.7.2.min.js">&#60;/script><br>
+          &#60;script src="../js/lightbox.js">&#60;/script><br>
+          &#60;link href="../css/lightbox.css" rel="stylesheet" /><br>
+        </div>
+        <h3>Bilder einfügen</h3>
+        <div class="code">
+          &#60;a href="../img/vorlage.png/" rel="lightbox" title="Wildlife">&#60;img src="../img/vorlage.png/">&#60;/a><br>
+        </div>
+        <h3>Bilder gruppieren</h3>
+        <div class="code">
+          &#60;a href="../img/1.png/" rel="lightbox[bildgruppe]">&#60;img src="../img/1.png/">&#60;/a><br>
+          &#60;a href="../img/2.png/" rel="lightbox[bildgruppe]">&#60;img src="../img/2.png/">&#60;/a><br>
+          &#60;a href="../img/3.png/" rel="lightbox[bildgruppe]">&#60;img src="../img/3.png/">&#60;/a><br>
+        </div>
+
+        <h2>Responsiveslider</h2>
+        Um den «Responsiveslider» im HTML zu verwenden dient folgender Code.
+        <h3>Dateien velinken</h3>
+        <div class="code">
+          &#60;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">&#60;/script><br>
+          &#60;script src="responsiveslides.min.js">&#60;/script><br>
+        </div>
+        <h3>Markup hinzufügen</h3>
+        <div class="code">
+          &#60;ul class="rslides"><br>
+          &#60;li>&#60;img src="../img/1.jpg" alt="">&#60;/li><br>
+          &#60;li>&#60;img src="../img/2.jpg" alt="">&#60;/li><br>
+          &#60;li>&#60;img src="../img/3.jpg" alt="">&#60;/li><br>
+          &#60;/ul><br>
+        </div>
+        <h3>CSS hinzufügen</h3>
+        <div class="code">
+          .rslides {<br>
+            position: relative;<br>
+            list-style: none;<br>
+            overflow: hidden;<br>
+            width: 100%;<br>
+            padding: 0;<br>
+            margin: 0;<br>
+          }<br>
+          <br>
+          .rslides li {<br>
+            -webkit-backface-visibility: hidden;<br>
+            position: absolute;<br>
+            display: none;<br>
+            width: 100%;<br>
+            left: 0;<br>
+            top: 0;<br>
+          }<br>
+          <br>
+          .rslides li:first-child {<br>
+            position: relative;<br>
+            display: block;<br>
+            float: left;<br>
+          }<br>
+          <br>
+          .rslides img {<br>
+            display: block;<br>
+            height: auto;<br>
+            float: left;<br>
+            width: 100%;<br>
+            border: 0;<br>
+          }<br>
+        </div>
+        <h3>JS für den Slider einbauen</h3>
+        <div class="code">
+          &#60;script><br>
+          $(function() {<br>
+            $(".rslides").responsiveSlides();<br>
+          });<br>
+          &#60;/script><br>
+          <br>
+          <h3>Slider Einstellungen optimieren</h3>
+          <div class="code">
+            $(".rslides").responsiveSlides({<br>
+              auto: true,<br>
+              speed: 500,<br>
+              timeout: 4000,<br>
+              pager: false,<br>
+              nav: false,<br>
+              random: false,<br>
+              pause: false,<br>
+              pauseControls: true,<br>
+              prevText: "Previous",<br>
+              nextText: "Next",<br>
+              maxwidth: "",<br>
+              navContainer: "",<br>
+              manualControls: "",<br>
+              namespace: "rslides",<br>
+              before: function(){},<br>
+              after: function(){}<br>
+            });<br>
+          </div>
 
 
+        </div>
+
+      </div>
+      <div id="7" class="block">
+        <h2>Block 7</h2>
+        In diesem Block erhielten wir Informationen über Video- und Audioformate. Hierbei erfuhr ich, dass man effizient die Browserkompatibilität der Formate auf https://www.dogphilosophy.net/ auffindet.<br>
+        Anschliessend erfuhr ich über den Video- und Audio-tag.<br>
+        <br>
+        Den Code um Audio einzufügen geht wie folgt<br>
+        <div class="code">
+          &#60;audio src="../audio/music.opus" type="audio/opus" con-trols>&#60;/audio><br>
+        </div>
+        <br>
+        Mögliche Attribute für Audio sind:<br>
+        <ul>
+          <li>autoplay</li>
+          <li>controls</li>
+          <li>loop</li>
+          <li>muted</li>
+          <li>preload (auto, none und metadata)</li>
+          <li>src</li>
+        </ul>
+        Den Code um Audio einzufügen geht wie folgt<br>
+        <div class="code">
+          &#60;video controls>&#60;source src="../video/movie.ogv">&#60;/video><br>
+        </div>
+        <br>
+        Mögliche Attribute für Video sind:<br>
+        <ul>
+          <li>autoplay</li>
+          <li>buffered</li>
+          <li>controls</li>
+          <li>loop</li>
+          <li>muted</li>
+          <li>played</li>
+          <li>preload (auto, none und metadata)</li>
+          <li>src</li>
+          <li>volume</li>
+        </ul>
+
+        Die Kompatibilität der Videoformate sieht folgendermassen aus:<br>
+
+        <table>
+          <th> <td>Browser</td> <td>WEBM</td> <td>OGG</td> <td>MP4</td> </th>
+          <tr> <td>IE 9+</td> <td>NEIN</td> <td>NEIN</td> <td>JA</td> <td>JA</td> </tr>
+          <tr> <td>Chrome</td> <td>JA</td> <td>JA</td> <td>JA</td> <td>JA</td> </tr>
+          <tr> <td>Firefox</td> <td>JA</td> <td>JA</td> <td>JA</td> <td>JA</td> </tr>
+          <tr> <td>Opera</td> <td>JA</td> <td>JA</td> <td>JA</td> <td>JA</td> </tr>
+          <tr> <td>Safari</td> <td>NEIN</td> <td>NEIN</td> <td>JA</td> <td>JA</td> </tr>
+
+        </table>
+
+      </div>
+      <div id="8" class="block">
+        <h2>Block 8</h2>
+        In diesem Block fand die Planung der Dreharbeiten für das <a href="uebungen.html#3">Projekt</a> statt.
+
+
+      </div>
+      <div id="9" class="block">
+        <h2>Block 9</h2>
+        In diesem Block vervollständigte ich die Profilseite und das Moduljournal.
+      </div>
+      <div id="10" class="block">
+        <h2>Block 10</h2>
+        In diesem Block war die LB.
+      </div>
     </div>
     <button onclick="topFunction()" id="up" title="Go to top">Top</button>
   </body>
-</html>
+  </html>

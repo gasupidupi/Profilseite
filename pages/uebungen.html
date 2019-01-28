@@ -18,21 +18,23 @@
     <div id="notice"><- TO INDEX</div>
     <div onClick="navReinRaus()" class="nav--hamburger">&#9776;</div>
     <div class="nav--menu" id="menu">
+      <a onclick="navReinRaus()" id="menuIndex" href="index.html">Index</a>
       <a onclick="navReinRaus()" id="menu1" href="#1">Wildlife Responsive</a>
       <a onclick="navReinRaus()" id="menu2" href="#2">Übung 3</a>
       <a onclick="navReinRaus()" id="menu3" href="#3">Gruppenarbeit</a>
+      <a onclick="navReinRaus()" id="menu4" href="#4">Audio und Video einbinden</a>
     </div>
   </nav>
 
   <div class="content" id="content">
-    <div id="1">
+    <div id="1"  class="block">
       <h1>Wildlife Responsive</h1>
       In dieser Übung handelt es sich darum, eine Webseite Responsive zu machen. Die Lösung sieht nachfoglendermassen aus:
 
       <a href="../img/wildlife.png/" rel="lightbox" title="Wildlife Responsive"><img src="../img/wildlife.png/" class="imgViewer"></a>
 
     </div>
-    <div id="2">
+    <div id="2" class="block">
       <h1>Übung 3</h1>
       In dieser Übung handelt es sich darum, nach einer Grafikvorlage für die TopoMedics eine Webseite zu erstellen.
 
@@ -40,14 +42,15 @@
 
 
     </div>
-    <div id="3">
+    <div id="3" class="block">
       <h1>Gruppenarbeit</h1>
-      <div style="height: 500px"></div>
+      Hierbei handelt es sich darum in einem Team von drei Personen ein Video über Webentwicklung zu drehen, eine Webseite dafür zu erstellen, einen Slider einzubauen und ein Projekthandbuch zu schreiben. Nach einer Besprechung entschieden wir uns als Team für das Thema Ladeeffizienz. Wir überlegten uns erst wie wir die Dreharbeiten und die Webseite gestalten wollten. Am Samstag den 26. Januar trafen wir uns in der Schule um die Dreharbeiten umzusetzen. Für die meisten Aktivitäten beteiligte sich jeder des Teams. Eine der individuellen Arbeiten jedoch war das Videoschneiden, was ich übernahm. Die erstellte Webseite sieht wie folgt aus.
+        <a href="../img/index.jpg/" rel="lightbox" title="Projektwebseite"><img src="../img/index.jpg/" class="imgViewer"></a>
 
 
 
     </div>
-    <div id="4">
+    <div id="4" class="block">
       <h1>Audio und Video einbinden</h1>
       <h2>Audio</h2>
       <br>flac<br>
@@ -82,20 +85,9 @@
                   <video controls>
                     <source src="../video/movie.webm">
                     </video>
-
-                    <script>
-                    $(function() {
-                      $(".rslides").responsiveSlides();
-                    });
-                  </script>
-                  <h2>responsiveslides</h2>
-                  <ul class="rslides">
-                    <li><img src="../img/1.jpg" alt=""></li>
-                    <li><img src="../img/2.jpg" alt=""></li>
-                    <li><img src="../img/3.jpg" alt=""></li>
-                  </ul>
-
                 </div>
+
+
                 <button onclick="topFunction()" id="up" title="Go to top">Top</button>
               </body>
               </html>
